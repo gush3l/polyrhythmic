@@ -205,7 +205,7 @@ var colorSelecterHandler = function () {
     var colorPickers = document.getElementsByClassName("color-picker");
 
     Array.from(colorPickers).forEach(element => {
-        var colorPickerInput = <HTMLInputElement>element;
+        var colorPickerInput = <HTMLInputElement> element;
         element.addEventListener('input', () => {
             var elID: string = element.id;
             settings[elID] = colorPickerInput.value;
